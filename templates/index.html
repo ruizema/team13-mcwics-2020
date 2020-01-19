@@ -3,19 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Podcast app</title>
-    <link href="../static/style.css" rel="stylesheet" type="text/css" />
+    <title>Podwalk</title>
+    <link href="../static/css/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <script src="script.js"></script>
-    <h1>Titre</h1>
+    <img src="../static/podwalk.png" class="center">
     <br>
     <br>
    <center>
+       <form action="https://podwalk-mcwics.appspot.com/api" method="GET">
+        <textarea name="origin" placeholder="Origin"></textarea>
+        <textarea name="destination" placeholder="Destination"></textarea>
+        <br><button type="submit" class="button" style="vertical-align:middle"><span>Go</span></button>
+       </form>
     <table>  
-    <tr><th><textarea placeholder="Destination"></textarea></th><th><p><input type="checkbox" name="depart" value="depart" checked> utiliser position actuelle</p></th></tr>
-    <tr><th><textarea placeholder="Genre"></textarea></th><th><p><input type="checkbox" name="genre" value="random"> random</p></th></tr>
-    <tr><th><textarea placeholder="Pace"></textarea></th><th><p><input type="checkbox" name="pace" value="pace" checked> defaut</p></th></tr></table>
-    <br><button class="button" style="vertical-align:middle"><span>Go</span></button>
   </body>
 </html>
